@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100..700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Roboto Mono", serif;
+        background-color: #79828b;
+        color: rgb(211, 211, 211);
+      }
+
+      header {
+        background-color: #475767;
+        padding: 15px;
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        list-style: none;
+        flex-wrap: wrap;
+      }
+
+      nav ul li {
+        text-transform: uppercase;
+        font-size: 14px;
+      }
+
+      nav ul li:first-child {
+        font-size: 30px;
+        color: rgb(54, 255, 54);
+      }
+
+      /* Updated About Section */
+      .about {
+        text-align: center;
+        padding: 20px;
+        min-height: 100vh; /* Full height of the viewport */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .about p {
+        font-size: 40px;
+        font-family: "Anton", serif;
+        text-transform: uppercase;
+      }
+
+      .highlight {
+        color: rgb(54, 255, 54);
+      }
+
+      .paragraph {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #475767;
+        border-radius: 15px;
+        text-align: center;
+      }
+
+      .paragraph p {
+        font-size: 18px;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      /* 🔥 RESPONSIVE DESIGN */
+      @media (max-width: 768px) {
+        nav ul {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .about {
+          min-height: auto; /* Remove full height on smaller screens */
+          padding: 50px 20px;
+        }
+
+        .about p {
+          font-size: 30px;
+        }
+
+        .paragraph {
+          width: 90%;
+          padding: 15px;
+        }
+
+        .paragraph p {
+          font-size: 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            G<ion-icon name="chevron-forward-sharp" size="large"></ion-icon>
+          </li>
+          <li>home</li>
+          <li>experience</li>
+          <li>portfolio</li>
+          <li>contact</li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="about">
+      <p>i <span class="highlight">'</span> m</p>
+      <p>g a u t a m</p>
+      <p>h a z a r i k a <span class="highlight">.</span></p>
+      <p>web developer & student</p>
+    </div>
+
+    <img
+      src="https://static.wixstatic.com/media/035244_9f46dd7c6e524eef94172c670fff1913~mv2_d_1920_1343_s_2.jpg"
+      alt="Keyboard Image"
+    />
+
+    <div class="paragraph">
+      <p>
+        I am a second-year BTech student at NIT Silchar, currently exploring the
+        world of web development alongside my core studies in Electronics and
+        Instrumentation.
+      </p>
+      <p>
+        Passionate about technology, I am keen on building projects that enhance
+        my understanding of software development.
+      </p>
+      <p>
+        Beyond academics, I maintain a disciplined fitness routine, including
+        calisthenics, and focus on a healthy lifestyle by avoiding fast food.
+      </p>
+    </div>
+  </body>
+</html>
